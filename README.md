@@ -55,6 +55,11 @@ docker-compose up helmet_cpu
 
 > Контейнеры монтируют `./violations:/app/violations` — кадры сохраняются и видны на хосте.
 
+В браузере:
+- `http://localhost:8000/` — демо-страница с MJPEG-стримом
+- `http://localhost:8000/video` — только видео
+- `http://localhost:8000/violations/view` — просмотр сохранённых кадров
+- `http://localhost:8000/health` — проверка статуса
 ---
 
 ## Конфигурация (через `.env` / `config.py`)
